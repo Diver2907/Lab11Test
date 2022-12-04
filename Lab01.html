@@ -1,0 +1,136 @@
+<html>
+
+    <head>
+        <!-- Add the Bootstrap CSS via the CDN (content delivery network) method -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+        <title>COSC 122 Lab 4 Index Page for Task 5.</title>
+    </head>
+
+    <body>
+        <h2>Lab 1 Rating Page</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <img src="images/Lab01.png">
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 26rem;">
+                        <div class="card-body">
+                            <h5 class="card-title" style="text-align:center;">Your Rating</h5>
+                            
+                            <h6 style="display:inline-block">Interesting:</h6>
+                            <div class="btn-group" role="group" aria-label="Interesting" id="Interesting">
+                                <input type="radio" class="btn-check" name="Interesting" id="Agree" value="Argee" autocomplete="off">
+                                <label class="btn btn-outline-success" for="Agree">Agree</label>
+                                <input type="radio" class="btn-check" name="Interesting" id="Neutral" value="Neutral" autocomplete="off">
+                                <label class="btn btn-outline-warning" for="Neutral">Neutral</label>
+                                <input type="radio" class="btn-check" name="Interesting" id="Disagree" value="Disagree" autocomplete="off">
+                                <label class="btn btn-outline-danger" for="Disagree">Disagree</label>
+                            </div>
+                            <br><br>
+                            <h6 style="display:inline-block">Difficulty:</h6>
+                            <div class="btn-group" role="group" aria-label="Difficulty">
+                                <input type="radio" class="btn-check" name="Difficulty" id="Easy" autocomplete="off">
+                                <label class="btn btn-outline-success" for="Easy">Easy</label>
+                                <input type="radio" class="btn-check" name="Difficulty" id="Intermediate" autocomplete="off">
+                                <label class="btn btn-outline-warning" for="Intermediate">Intermediate</label>
+                                <input type="radio" class="btn-check" name="Difficulty" id="Hard" autocomplete="off">
+                                <label class="btn btn-outline-danger" for="Hard">Hard</label>
+                            </div>
+                            <br><br>
+                            <h6 style="display:inline-block">Creative:</h6>
+                            <div class="btn-group" role="group" aria-label="Creative">
+                                <input type="radio" class="btn-check" name="Creative" id="Very" autocomplete="off">
+                                <label class="btn btn-outline-success" for="Very">Very Creative</label>
+                                <input type="radio" class="btn-check" name="Creative" id="CrNeutral" autocomplete="off">
+                                <label class="btn btn-outline-warning" for="CrNeutral">Neutral</label>
+                                <input type="radio" class="btn-check" name="Creative" id="Not" autocomplete="off">
+                                <label class="btn btn-outline-danger" for="Not">Not Creative</label>
+                            </div>
+                            <br><br>
+                            <h6 style="display:inline-block">Overall:</h6>
+                            <div class="btn-group" role="group" aria-label="Overall">
+                                <input type="radio" class="btn-check" name="Overall" id="Great" autocomplete="off">
+                                <label class="btn btn-outline-success" for="Great">Great</label>
+                                <input type="radio" class="btn-check" name="Overall" id="OvNeutral" autocomplete="off">
+                                <label class="btn btn-outline-warning" for="OvNeutral">Neutral</label>
+                                <input type="radio" class="btn-check" name="Overall" id="Needs" autocomplete="off">
+                                <label class="btn btn-outline-danger" for="Needs">Needs Improvement</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="collapse" id="FeedbackCard">
+                        <div id="Feedback-Card" class="card" style="width:18rem; display:block; height:fit-content; padding-bottom: 3%;">
+                            <div class="card-body">
+                                <h5 class="card-title" style="text-align:center;">Your Rating</h5>
+                                <div class="row">
+                                    <div class="col">
+                                        <h6>Interesting:</h6>
+                                    </div>
+                                    <div class="col">
+                                        <button class="btn btn-warning">Neutral</button>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="row">
+                                    <div class="col">
+                                        <h6>Difficulty:</h6>
+                                    </div>
+                                    <div class="col">
+                                        <button class="btn btn-success">Easy</button>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="row">
+                                    <div class="col">
+                                        <h6>Creative:</h6>
+                                    </div>
+                                    <div class="col">
+                                        <button class="btn btn-warning">Neutral</button>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="row">
+                                    <div class="col">
+                                        <h6>Overall:</h6>
+                                    </div>
+                                    <div class="col">
+                                        <button class="btn btn-warning">Neutral</button>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="row">
+                                    <div class="col">
+                                        <label for="Review">What I learned from this lab:</label><br>
+                                        <textarea type="text" id="Review" style="min-width:100%; min-height:100%;" placeholder="I learned how to write properly using markdown syntax. I also learned the process for labs"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col text-center">
+                    <br>
+                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#FeedbackCard" aria-expanded="false" aria-controls="FeedbackCard">Compare to my rating</button>
+                    <button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#FeedbackCard" aria-expanded="false" aria-controls="FeedbackCard" onclick="clearAll()">Reset</button>
+                </div>
+            </div>
+        </div>
+        <script>
+            function clearAll(){
+                document.querySelector('input[name="Interesting"]:checked').checked = false;
+                document.querySelector('input[name="Difficulty"]:checked').checked = false;
+                document.querySelector('input[name="Creative"]:checked').checked = false;
+                document.querySelector('input[name="Overall"]:checked').checked = false;
+            }
+        </script>
+    </body>
+</html>
